@@ -8,11 +8,12 @@ import java.util.List;
 
 @Getter
 @Setter
-public class Bill {
-    Long id;
-    int amount;
-    Ticket ticket;
-    EStatus status;
-    LocalTime exitTime;
-    List<Payment> payments;
+public class Bill extends BaseModel{
+    private Gate gate;
+    private int amount;
+    private EStatus status;
+    private  Ticket ticket;
+    private Operator operator;
+    private LocalTime exitTime;
+    private List<Payment> payments;
 }

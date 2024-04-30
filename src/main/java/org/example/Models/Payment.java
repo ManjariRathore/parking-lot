@@ -6,10 +6,10 @@ import lombok.Setter;
 import java.time.LocalTime;
 @Getter
 @Setter
-public class Payment {
-    Long id;
-    int amount;
-    LocalTime time;
-    EStatus status;
-    EPaymentMode paymentMode;
+public class Payment extends BaseModel {
+    private int amount;
+    private LocalTime time;
+    private EStatus status;
+    private String referenceNumber;
+    private EPaymentMode paymentMode;
 }

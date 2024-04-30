@@ -7,9 +7,10 @@ import java.util.List;
 
 @Getter
 @Setter
-public class ParkingLot {
-    Long id;
-    List<Gate> gateList;
-    EParkingStatus parkingLotStatus;
-    List<ParkingFloor> parkingFloorList;
+public class ParkingLot extends BaseModel{
+    private List<Gate> gates;
+    private List<EVehicleType> vehicleTypes;
+    private EParkingLotStatus parkingLotStatus;
+    private List<ParkingFloor> parkingFloorList;
+
 }

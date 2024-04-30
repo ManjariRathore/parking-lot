@@ -7,9 +7,10 @@ import java.util.*;
 
 @Getter
 @Setter
-public class ParkingFloor {
-    Long id;
-    Long parkingFloorNo;
-    List<ParkingSpot> parkingSpotList;
-    EParkingStatus parkingFloorStatus;
+public class ParkingFloor extends BaseModel{
+    private Long parkingFloorNo;
+    private List<ParkingSpot> parkingSpotList;
+    private EParkingLotStatus parkingFloorStatus;
+
+
 }

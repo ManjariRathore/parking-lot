@@ -5,11 +5,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Gate {
-    Long id;
-    int GateNo;
-    Operator operator;
-    EGateType gateType;
-
+public class Gate extends BaseModel{
+    private int GateNo;
+    private Operator operator;
+    private  EGateType gateType;
+    private EGateStatus gateStatus;
 
 }
